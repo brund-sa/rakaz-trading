@@ -107,13 +107,12 @@ img {
 	margin-left: -50px;
 	margin-top: -50px;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	width: 100px;
 	z-index: 999;
 }
 
 .preload-spinner {
-	margin: 0 auto 14px;
 	text-align: center;
 }
 
@@ -127,7 +126,11 @@ img {
 
 .loading-logo-wraper img
 {
-	width:100%
+  width:100%;
+  -webkit-animation: flickerAnimation 1.3s infinite;
+  -moz-animation: flickerAnimation 1.3s infinite;
+  -o-animation: flickerAnimation 1.3s infinite;
+   animation: flickerAnimation 1.3s infinite;
 }
 
 .tp-loader
@@ -150,7 +153,26 @@ img {
 	border-radius:3px;-moz-border-radius:3px;
 	-webkit-border-radius:3px
 }
-
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
 @-webkit-keyframes tp-rotateplane
 {
 50%
