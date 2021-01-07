@@ -1,0 +1,45 @@
+
+.button{
+   border: solid 1px #fff;
+   background-color: #1b20e500;
+   color: #fff;
+   padding: 7px 30px;
+}
+.button:before{
+	background-color: #fff;
+   border: 2px solid #fff;
+}
+.button:hover, .button:active {
+   color: #DF331B;
+   border: solid 1px #fff;
+   border-radius: 0%;
+   background-color: #00000000; padding: 7px 30px;
+   transition: all 0.9s ease-in-out !important;
+}
+.button.bordered:hover, .button.bordered:active, .button.bordered:focus  {
+   color: rgba(223, 50, 27, 0.136);
+   border: none;
+   background-color: #000000;
+}
+
+.skill .bar .bar-active, .skill .bar .bar-background, .tse-scrollbar .drag-handle {
+  background-color: #DF331B;
+}
+.side-panel .social .fa a, .side-panel .description i{
+	color: #fff;
+}
+.side-panel i, .social a:hover, .mfValidation {
+	color: #DF331B;
+}
+
+.side-panel .gallery .gallery-item .description {
+  background-color: rgba(223, 50, 27, 0.5);
+}
+
+.modal .modal-content:before {
+ border: solid 1px rgba(223, 50, 27, 0.5);
+}
+
+#player-nav li:hover {
+	background:rgba(223, 50, 27, 0.5)
+}
